@@ -1,0 +1,99 @@
+.headline-categories {
+  padding: 23px 0 0;
+}
+.bg-decoration {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.ellipse-1 {
+  width: 50%;
+  height: 57.9%;
+  background-color: rgba(0, 153, 255, 0.2);
+  border-radius: 50%;
+  filter: blur(360px);
+}
+.ellipse-2 {
+  width: 50%;
+  height: 57.9%;
+  background-color: rgba(126, 42, 144, 0.25);
+  margin-top: 253px;
+  border-radius: 50%;
+  filter: blur(360px);
+}
+.button4-two {
+  width: calc(31.75% - 130px);
+  height: calc(9.29% - 30px);
+  background-color: var(--white);
+  border-radius: 50px;
+  padding: 15px 65px;
+  box-shadow: 0 4px 24px 0 rgba(180, 29, 141, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 237px;
+  top: 275px;
+}
+.img-product {
+  width: 19px;
+  height: 18.12px;
+  margin-right: 10px;
+}
+.button4 {
+  color: rgba(40, 40, 40, 1);
+  letter-spacing: 0.75px;
+  font-family: var(--button-text-family);
+  font-size: var(--button-text-size);
+  font-weight: var(--button-text-weight);
+  line-height: var(--button-text-line-height);
+}
+.button3 {
+  width: calc(31.47% - 130px);
+  height: calc(9.29% - 30px);
+  background-color: var(--white);
+  border-radius: 50px;
+  padding: 15px 65px;
+  box-shadow: 0 4px 24px 0 rgba(51, 0, 255, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 238px;
+  top: 199px;
+}
+.paragraph-small {
+  width: 51.58%;
+  height: 7.05%;
+  text-align: center;
+  position: absolute;
+  right: 168px;
+  top: 75px;
+  font-family: "Rabbid Highway Sign IV";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--third-text);
+}
+.paragraph-small-emphasis-1 {
+  font-family: "Rabbid Highway Sign IV";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--black);
+  letter-spacing: 0.75px;
+}
+.subtitle {
+  width: 33.76%;
+  height: 7.69%;
+  font-family: "Rabbid Highway Sign IV";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  color: var(--primary-text);
+  text-align: center;
+  position: absolute;
+  right: 229px;
+  top: 0;
+  letter-spacing: 0.75px;
+}

@@ -1,0 +1,101 @@
+.hero {
+  padding: 83px 0 0;
+}
+.bg-decoration {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.ellipse-1 {
+  width: 348px;
+  height: 348px;
+  background-color: rgba(0, 153, 255, 0.2);
+  border-radius: 50%;
+  filter: blur(360px);
+}
+.ellipse-2 {
+  width: 348px;
+  height: 348px;
+  background-color: rgba(126, 42, 144, 0.25);
+  margin-top: 253px;
+  border-radius: 50%;
+  filter: blur(360px);
+}
+.ideas-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 236px;
+  bottom: 191px;
+}
+.num-10-ideas-two {
+  background-color: var(--white);
+  margin-bottom: 60px;
+  border-radius: 50px;
+  padding: 15px 65px;
+  box-shadow: 0 4px 24px 0 rgba(51, 0, 255, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-service {
+  width: 19px;
+  height: 18.12px;
+  margin-right: 10px;
+}
+.num-10-ideas {
+  color: rgba(40, 40, 40, 1);
+  letter-spacing: 0.75px;
+  font-family: var(--button-text-family);
+  font-size: var(--button-text-size);
+  font-weight: var(--button-text-weight);
+  line-height: var(--button-text-line-height);
+}
+.num-20-ideas {
+  background-color: var(--white);
+  border-radius: 50px;
+  padding: 15px 65px;
+  box-shadow: 0 4px 24px 0 rgba(180, 29, 141, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.num-20-ideas:not(:last-of-type) {
+  margin-bottom: 60px;
+}
+.headline-coins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 168px;
+  top: 0;
+}
+.subtitle {
+  font-family: "Rabbid Highway Sign IV";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  color: var(--primary-text);
+  text-align: center;
+  margin-bottom: 27px;
+  letter-spacing: 0.75px;
+}
+.paragraph-small {
+  width: 359px;
+  text-align: center;
+  font-family: "Rabbid Highway Sign IV";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--third-text);
+}
+.paragraph-small-emphasis-1 {
+  font-family: "Rabbid Highway Sign IV";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--black);
+  letter-spacing: 0.75px;
+}
