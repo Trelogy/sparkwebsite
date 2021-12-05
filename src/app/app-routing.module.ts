@@ -3,8 +3,12 @@ import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
+//Components
+import { LandingComponent } from './pages/landing/landing.component';
+
 const routes: Routes = [
-  { path: '', redirectTo: 'landing', pathMatch: 'full' }
+  { path: '', redirectTo: 'landing', pathMatch: 'full' },
+  { path: 'landing',          component: LandingComponent },
 
 ];
 
