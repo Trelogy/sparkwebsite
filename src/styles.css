@@ -1,1 +1,354 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Propiedades base del documento, fuentes y colores */
+:root {
+    --white-color: #fff;
+    --primary-text: #1D1D1D;
+    --secondary-text: #282828;
+    --third-text: #333333;
+    --primary-light-text: #828282;
+    --secondary-light-text: #BDBDBD;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gradient-text {
+    background: linear-gradient(270deg, #3300FF 0%, #B41D8D 97.65%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+/* fuentes */ 
+.title-font {
+    font-family: 'Rabbid Highway Sign IV', sans-serif;
+    font-size: 56px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.75px;
+}
+
+.paragraph-font {
+    font-family: 'Rabbid Highway Sign IV', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.65;
+    letter-spacing: 0.75px;
+}
+
+.button-font {
+    font-family: 'Rabbid Highway Sign IV', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.75px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* aqui comienza la navbar */
+
+.logo {
+    width: 162px;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 264px 0 0;
+    padding: 0 20px;
+    object-fit: contain;
+}
+
+.nav-bar {
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+    height: 125px;
+    top: 0;
+    padding: 26px 100px 26px 78px;
+    background: var(--primary-light-text);
+  }
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--third-text);
+    font-family: 'Rabbid Highway Sign IV', sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 165%;
+    letter-spacing: 0.75px;
+    cursor: pointer;
+}
+
+.navlink1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+
+    position: absolute;
+    width: 129px;
+    height: 33px;
+    left: 744px;
+    top: 46px;
+}
+
+.navlink2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+
+    position: absolute;
+    width: 119px;
+    height: 33px;
+    left: 898px;
+    top: 46px;
+}
+
+.navlink3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+
+    position: absolute;
+    width: 135px;
+    height: 33px;
+    left: 1042px;
+    top: 46px;
+}
+
+.coin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+
+    position: absolute;
+    width: 107px;
+    height: 53px;
+    left: 1519px;
+    top: 38px;
+    cursor: pointer;
+}
+
+
+.navlink4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+
+    position: absolute;
+    width: 169px;
+    height: 53px;
+    left: 1651px;
+    top: 36px;
+   
+    border-style: solid;
+    border-width: 2.7px;
+    border-image-source: linear-gradient(270deg, #3300FF 0%, #B41D8D 97.65%);
+    border-image-slice: 1;
+}
+
+
+.image-coin {
+    flex-grow: 0;
+    float: left;
+    display: block;
+    margin: auto;
+}
+
+
+/* aqui comienza el landing */
+
+.landing {
+    margin-bottom: 125px;
+    background: var(--white-color);
+    min-height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 716px;
+    height: 621px;
+    top: 202px;
+}
+
+.bg-decoration {
+    left: -10px;
+    top: -10px;
+    background-image: url(./assets/img/bg-decoration.jpg);
+}
+
+.header1 {
+    width: 443px;
+    height: 160px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 133px 127px 5px 126px;
+    padding: 10px;
+}
+
+.title {
+    flex-grow: 0;
+    text-align: center;
+    color: var(--primary-text);
+}
+
+.text {
+    width: 453px;
+    height: 98px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 122px 15px 121px;
+    padding: 10px;
+}
+
+.paragraph {
+    text-align: center;
+    text-indent: 15px;
+    flex-grow: 0;
+    color: var(--third-text);
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+.button-gradient {
+    width: 251px;
+    height: 65px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 223px 125px 222px;
+    padding: 20px 65px;
+    border-radius: 50px;
+    background-image: linear-gradient(270deg, #3300FF 0%, #B41D8D 97.65%);
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.button-gradient:hover {
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.button-gradient:active {
+    opacity: 0.5;
+}
+
+/* aqui comienza el  footer */
+
+footer {
+    width: 100%;
+    height: 125px;
+    bottom: 0;
+    padding: 26px 100px 26px 78px;
+    background: var(--primary-light-text);
+    position: absolute;
+}
+
+.logo-fot {
+    width: 162px;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 1215px 0 0;
+    padding: 0 20px;
+    object-fit: contain;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: var(--third-text);
+    font-family: 'Rabbid Highway Sign IV', sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.65;
+    letter-spacing: 0.75px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.footlink1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+
+    position: absolute;
+    width: 110px;
+    height: 26px;
+    left: 1455px;
+    top: 49px;
+}
+
+.footlink2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+
+    position: absolute;
+    width: 109px;
+    height: 26px;
+    left: 1590px;
+    top: 49px;
+}
+
+.footlink3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+
+    position: absolute;
+    width: 96px;
+    height: 26px;
+    left: 1724px;
+    top: 49px;
+}
