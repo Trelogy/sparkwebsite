@@ -17,12 +17,28 @@
 
 .gradient-text {
     background: linear-gradient(270deg, #3300FF 0%, #B41D8D 97.65%);
-
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;   
 }
 
+.gradient-text:hover {
+    cursor: pointer;
+
+}
+
+.landing {
+    margin-bottom: 125px;
+    background: var(--white-color);
+    min-height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
 /* fuentes */ 
+
 .title-font {
     font-family: 'Rabbid Highway Sign IV', sans-serif;
     font-size: 56px;
@@ -78,8 +94,8 @@
     height: 125px;
     top: 0;
     padding: 26px 100px 26px 78px;
-    background: var(--primary-light-text);
-  }
+    background: var(--white-color);
+}
 
 nav ul li a {
     text-decoration: none;
@@ -91,7 +107,11 @@ nav ul li a {
     font-size: 20px;
     line-height: 165%;
     letter-spacing: 0.75px;
+}
+
+nav ul li a:hover {
     cursor: pointer;
+    color: var(--primary-light-text);
 }
 
 .navlink1 {
@@ -148,9 +168,7 @@ nav ul li a {
     height: 53px;
     left: 1519px;
     top: 38px;
-    cursor: pointer;
 }
-
 
 .navlink4 {
     display: flex;
@@ -164,13 +182,7 @@ nav ul li a {
     height: 53px;
     left: 1651px;
     top: 36px;
-   
-    border-style: solid;
-    border-width: 2.7px;
-    border-image-source: linear-gradient(270deg, #3300FF 0%, #B41D8D 97.65%);
-    border-image-slice: 1;
 }
-
 
 .image-coin {
     flex-grow: 0;
@@ -179,18 +191,7 @@ nav ul li a {
     margin: auto;
 }
 
-
 /* aqui comienza el landing */
-
-.landing {
-    margin-bottom: 125px;
-    background: var(--white-color);
-    min-height: 100%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
 
 .hero {
     width: 716px;
@@ -260,11 +261,12 @@ nav ul li a {
     padding: 20px 65px;
     border-radius: 50px;
     background-image: linear-gradient(270deg, #3300FF 0%, #B41D8D 97.65%);
-    cursor: pointer;
+    
     color: var(--white-color);
 }
 
 .button-gradient:hover {
+    cursor: pointer;
     -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
 }
@@ -280,7 +282,7 @@ footer {
     height: 125px;
     bottom: 0;
     padding: 26px 100px 26px 78px;
-    background: var(--primary-light-text);
+    background: var(--white-color);
     position: absolute;
 }
 
