@@ -14,6 +14,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .gradient-text {
@@ -68,7 +69,7 @@
 
 .h1-font {
     font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -78,7 +79,7 @@
 
 .paragraph-font {
     font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -88,7 +89,7 @@
 
 .button-font {
     font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.875em;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -339,7 +340,7 @@ footer nav ul li a {
     font-style: normal;
     font-stretch: normal;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.65;
     letter-spacing: 0.75px;
     cursor: pointer;
