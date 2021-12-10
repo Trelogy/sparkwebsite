@@ -5,11 +5,19 @@ import { RouterModule, Routes } from '@angular/router';
 
 //Components
 import { LandingComponent } from './pages/landing/landing.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
+import { CoinsComponent } from './pages/coins/coins.component';
+import { AnswersServiceComponent } from './pages/answers-service/answers-service.component';
+import { CategoriesServiceComponent } from './pages/categories-service/categories-service.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'landing', pathMatch: 'full' },
   { path: 'landing',          component: LandingComponent },
-
+  { path: 'categories',          component: CategoriesComponent },
+  { path: 'coins',          component: CoinsComponent },
+  { path: 'answers-service',          component: AnswersServiceComponent },
+  { path: 'categories-service',          component: CategoriesServiceComponent },
 ];
 
 @NgModule({
