@@ -9,7 +9,7 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { CoinsComponent } from './pages/coins/coins.component';
 import { AnswersServiceComponent } from './pages/answers-service/answers-service.component';
 import { CategoriesServiceComponent } from './pages/categories-service/categories-service.component';
-
+import { SigninComponent } from './pages/signin/signin.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'landing', pathMatch: 'full' },
@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'coins',          component: CoinsComponent },
   { path: 'answers-service',          component: AnswersServiceComponent },
   { path: 'categories-service',          component: CategoriesServiceComponent },
+  { path: 'signin',          component: SigninComponent },
 ];
 
 @NgModule({
