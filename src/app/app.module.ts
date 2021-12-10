@@ -18,6 +18,7 @@ import { AnswersServiceComponent } from './pages/answers-service/answers-service
 import { AnswersProductComponent } from './pages/answers-product/answers-product.component';
 import { CoinsComponent } from './pages/coins/coins.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { CoinsComponent } from './pages/coins/coins.component';
     CategoriesProductComponent,
     AnswersServiceComponent,
     AnswersProductComponent,
-    CoinsComponent
+    CoinsComponent,
+    
   ],
   imports: [
     BrowserModule,
