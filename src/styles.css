@@ -58,7 +58,7 @@
 
 .title-font {
     font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -66,9 +66,19 @@
     letter-spacing: 0.75px;
 }
 
+.h1-font {
+    font-family: 'Rabbid Highway Sign IV', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: 0.75px;
+}
+
 .paragraph-font {
     font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -78,7 +88,7 @@
 
 .button-font {
     font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -112,6 +122,7 @@
     top: 0;
     padding: 26px 100px 26px 78px;
     background: var(--white-color);
+    position: relative;
 }
 
 nav ul li a {
@@ -121,7 +132,7 @@ nav ul li a {
     font-style: normal;
     font-stretch: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 165%;
     letter-spacing: 0.75px;
     list-style: none;
@@ -201,7 +212,7 @@ nav ul li a:hover {
     width: 10%;
     padding: 10px 20px;
     text-align: center; 
-
+    position: absolute;
 }
 
 .navlink4::before,
@@ -212,8 +223,6 @@ nav ul li a:hover {
      linear-gradient(#fff,#fff) padding-box, /*this is your white background*/
      linear-gradient(to left, #3300FF 0%, #B41D8D 97.65%) border-box;
     color: var(--third-text);
-
-    position: absolute;
 }
 
 .image-coin {
@@ -301,25 +310,26 @@ nav ul li a:hover {
 
 footer {
     width: 100%;
-    height: 125px;
     bottom: 0;
-    padding: 26px 100px 26px 78px;
     background: var(--white-color);
-    background-attachment: fixed;
     position: absolute;
 }
 
-.logo-fot {
-    width: 162px;
-    height: 73px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 0 1215px 0 0;
-    padding: 0 20px;
-    object-fit: contain;
+.menu {
+    margin-right: 100px;
+}
+
+nav {
+    float: right;
+}
+
+footer nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px 0 0;
+    padding: 49px 25px;
+    text-align: center;
+
 }
 
 footer nav ul li a {
@@ -329,51 +339,8 @@ footer nav ul li a {
     font-style: normal;
     font-stretch: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.65;
     letter-spacing: 0.75px;
-    text-align: left;
     cursor: pointer;
-}
-
-.footlink1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-
-    position: absolute;
-    width: 110px;
-    height: 26px;
-    left: 1455px;
-    top: 49px;
-}
-
-.footlink2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-
-    position: absolute;
-    width: 109px;
-    height: 26px;
-    left: 1590px;
-    top: 49px;
-}
-
-.footlink3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-
-    position: absolute;
-    width: 96px;
-    height: 26px;
-    left: 1724px;
-    top: 49px;
 }

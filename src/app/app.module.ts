@@ -17,6 +17,7 @@ import { CategoriesProductComponent } from './pages/categories-product/categorie
 import { AnswersServiceComponent } from './pages/answers-service/answers-service.component';
 import { AnswersProductComponent } from './pages/answers-product/answers-product.component';
 import { CoinsComponent } from './pages/coins/coins.component';
+import { SinginComponent } from './pages/singin/singin.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CoinsComponent } from './pages/coins/coins.component';
     CategoriesProductComponent,
     AnswersServiceComponent,
     AnswersProductComponent,
-    CoinsComponent
+    CoinsComponent,
+    SinginComponent
   ],
   imports: [
     BrowserModule,
