@@ -7,6 +7,7 @@
     --third-text: #333333;
     --primary-light-text: #828282;
     --secondary-light-text: #BDBDBD;
+    --gradient: -webkit-linear-gradient(right, #3300FF 0%, #B41D8D 97.65%);
 }
 
 * {
@@ -16,7 +17,7 @@
 }
 
 .gradient-text {
-    background: linear-gradient(270deg, #3300FF 0%, #B41D8D 97.65%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;   
@@ -27,15 +28,31 @@
 
 }
 
-.landing {
-    margin-bottom: 125px;
+.page-header{
     background: var(--white-color);
+    
     min-height: 100%;
-    display: flex;
+    overflow: hidden;
     position: relative;
-    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* Center vertically */
     align-items: center;
+    /*Center horizontaly */
+    justify-content: center;
 }
+
+.hero {
+    background-position: center center;
+    background-size: cover;
+    width: 716px;
+    height: 621px;
+    top: 202px;
+}
+
 
 /* fuentes */ 
 
@@ -107,6 +124,7 @@ nav ul li a {
     font-size: 20px;
     line-height: 165%;
     letter-spacing: 0.75px;
+    list-style: none;
 }
 
 nav ul li a:hover {
@@ -162,11 +180,12 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
+    gap: 10px;
 
     position: absolute;
     width: 107px;
     height: 53px;
-    left: 1519px;
+    left: 1475px;
     top: 38px;
 }
 
@@ -175,35 +194,38 @@ nav ul li a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    left: 1607px;
+    top: 36px;
+    height: 53px;
+    width: 10%;
     padding: 10px 20px;
+    text-align: center; 
+
+}
+
+.navlink4::before,
+.navlink4 {
+    border-radius: 50px; 
+    border: 4px solid transparent; 
+    background:
+     linear-gradient(#fff,#fff) padding-box, /*this is your white background*/
+     linear-gradient(to left, #3300FF 0%, #B41D8D 97.65%) border-box;
+    color: var(--third-text);
 
     position: absolute;
-    width: 169px;
-    height: 53px;
-    left: 1651px;
-    top: 36px;
 }
 
 .image-coin {
     flex-grow: 0;
     float: left;
+    left: 30px;
     display: block;
-    margin: auto;
+    margin: -2px 3px;
 }
 
 /* aqui comienza el landing */
 
-.hero {
-    width: 716px;
-    height: 621px;
-    top: 202px;
-}
-
-.bg-decoration {
-    left: -10px;
-    top: -10px;
-    background-image: url(./assets/img/bg-decoration.jpg);
-}
 
 .header1 {
     width: 443px;
@@ -260,7 +282,7 @@ nav ul li a:hover {
     margin: 15px 223px 125px 222px;
     padding: 20px 65px;
     border-radius: 50px;
-    background-image: linear-gradient(270deg, #3300FF 0%, #B41D8D 97.65%);
+    background-image: var(--gradient);
     
     color: var(--white-color);
 }
@@ -283,6 +305,7 @@ footer {
     bottom: 0;
     padding: 26px 100px 26px 78px;
     background: var(--white-color);
+    background-attachment: fixed;
     position: absolute;
 }
 
