@@ -11,7 +11,7 @@ export const environment = {
     authDomain: 'sparkwebsite-67b8b.firebaseapp.com',
     messagingSenderId: '108052487112',
   },
-  production: false
+  // production: false
 };
 
 /*
