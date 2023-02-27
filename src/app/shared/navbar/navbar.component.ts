@@ -1,6 +1,7 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +12,7 @@ export class NavbarComponent implements OnInit {
   private toggleButton: any;
   private sidebarVisible: boolean;
 
-  constructor(public location: Location, private element : ElementRef) {
+  constructor(public location: Location, private element : ElementRef, private authService: AuthService, private router:Router) {
     this.sidebarVisible = false;
    }
 
@@ -48,16 +49,24 @@ sidebarToggle() {
         this.sidebarClose();
     }
 };
-isHome() {
-  var titlee = this.location.prepareExternalUrl(this.location.path());
-  if(titlee.charAt(0) === '#'){
-      titlee = titlee.slice( 1 );
-  }
-    if( titlee === '/landing' ) {
-        return true;
+
+    isHome() {
+    var titlee = this.location.prepareExternalUrl(this.location.path());
+    if(titlee.charAt(0) === '#'){
+        titlee = titlee.slice( 1 );
     }
-    else {
-        return false;
+        if( titlee === '/landing' ) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
-}
+
+    userLogged=this.authService.getUserLogged();
+
+    logout() {
+        this.authService.logout();
+        this.router.navigate(['/landing']);
+    }
 }

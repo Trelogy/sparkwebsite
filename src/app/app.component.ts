@@ -2,9 +2,9 @@ import { Component, OnInit, Inject, Renderer2, ElementRef, ViewChild } from '@an
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { Router, NavigationEnd } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
-import 'rxjs/add/operator/filter';
+//import 'rxjs/add/operator/filter';
 import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs-compat/Subscription';
 
 @Component({
   selector: 'app-root',
@@ -23,16 +23,15 @@ export class AppComponent implements OnInit {
       
       this.renderer.listen('window', 'scroll', (event) => {
           const number = window.scrollY;
-          if (number > 150 || window.pageYOffset > 150) {
+          if (number > 0 || window.pageYOffset > 0) {
               // add logic
-              navbar.classList.remove('navbar-transparent');
+              navbar.classList.add('menu-fixed');
           } else {
               // remove logic
-              navbar.classList.add('navbar-transparent');
+              navbar.classList.remove('menu-fixed');
           }
       });
       
-
   }
   removeFooter() {
       var titlee = this.location.prepareExternalUrl(this.location.path());

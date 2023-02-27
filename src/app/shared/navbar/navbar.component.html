@@ -1,17 +1,78 @@
-<nav class="nav-bar">
-     <div class="logo" >
-         <a href="#landing"><img src="./assets/img/logo.png" alt=""></a>
-      </div>
-       <ul class="menu">
-          <li class="navlink1"><a href="#">Settings</a>
-          </li>
-          <li class="navlink2"><a href="#">History</a>
-          </li>
-          <li class="navlink3"><a class="gradient-text" href="#">Upgrade</a>
-          </li>
-          <li class="coin"><a href="#landing"><img class="image-coin" src="./assets/img/coin.png">25</a>
-          </li>
-          <li class="navlink4"><a href="#">Spark Ideas</a>
-          </li>
+<div class="nav-bar">
+  <a href="#landing"
+    ><img class="img-logo" alt="logo" src="./assets/img/img-logo.svg"
+  /></a>
+  <ul class="nav">
+    <li class="navlink1">
+      <button class="btn-link">Settings</button>
+      <ul *ngIf="userLogged | async as user">
+        <li><p>Username:</p></li>
+        <li>
+          <button class="btn-link">
+            <input
+              type="text"
+              name="change-user"
+              placeholder="Change Username"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Change Username'"
+            />
+          </button>
+        </li>
+        <li><p>Email:</p></li>
+        <li><p class="usermail">UserEmail</p></li>
+        <li>
+          <p>
+            Private Spark:<button class="btn-link toggle">
+              <input type="checkbox" name="tog-btn" id="tog-btn" /><label
+                class="togg"
+                for="tog-btn"
+              ></label>
+            </button>
+          </p>
+        </li>
+        <li>
+          <a
+            ><button class="btn-link logout" (click)="logout()">
+              Log out
+            </button></a
+          >
+        </li>
       </ul>
-</nav>
+    </li>
+    <li class="navlink2">
+      <a href="#history"><button class="btn-link">History</button></a>
+    </li>
+    <li class="navlink3">
+      <a href="#upgrade"><button class="btn-link">Upgrade</button></a>
+    </li>
+    <li class="navlink4">
+      <a href="#upgrade"
+        ><button class="btn-link">
+          <img
+            class="img-coin"
+            alt="coins"
+            src="./assets/img/img-coin.png"
+            onmouseover="this.src='./assets/animation/gif-coin.gif'"
+            onmouseout="this.src='./assets/img/img-coin.png'"
+          />0
+        </button></a
+      >
+    </li>
+    <li *ngIf="userLogged | async as user; else showSignin">
+      <a href="#landing"><button class="navlink5">Spark Ideas</button></a>
+    </li>
+    <ng-template #showSignin
+      ><li>
+        <a href="#signin"><button class="navlink5">Spark Ideas</button></a>
+      </li></ng-template
+    >
+  </ul>
+</div>
+
+<!--
+          <li *ngIf="userLogged|async as user" class="coin h4-font"><button (click)="logout()" > Log Out </button>
+          </li>
+          <li class="navlink4 h4-font" *ngIf="userLogged|async as user else showSignin2"><a href="#categories" >Spark Ideas</a>
+          </li>
+          <ng-template #showSignin2><li class="navlink4 h4-font"><a href="#signin" >Spark Ideas</a>
+          </li></ng-template>-->

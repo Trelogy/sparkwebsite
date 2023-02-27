@@ -1,347 +1,1093 @@
-
-/* Propiedades base del documento, fuentes y colores */
+/* Properties and colors */
 :root {
-    --white-color: #fff;
-    --primary-text: #1D1D1D;
-    --secondary-text: #282828;
-    --third-text: #333333;
-    --primary-light-text: #828282;
-    --secondary-light-text: #BDBDBD;
-    --gradient: -webkit-linear-gradient(right, #3300FF 0%, #B41D8D 97.65%);
+  --white-color: #fff;
+  --primary-text: #1d1d1d;
+  --secondary-text: #282828;
+  --third-text: #333333;
+  --primary-light-text: #828282;
+  --secondary-light-text: #bdbdbd;
+  --gradient: -webkit-linear-gradient(to left, #3300ff 0%, #b41d8d 97.65%);
+  --gradient: linear-gradient(to left, #3300ff 0%, #b41d8d 97.65%);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Rabbid Highway Sign IV;
+  letter-spacing: 0.75px;
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  cursor: default;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: Rabbid Highway Sign IV;
+  src: url("assets/font/Rabbid-Highway-Sign-IV-Bold/RabbidHighwaySignIV.otf");
+  font-family: Rabbid Highway Sign IV Blk;
+  src: url("assets/font/Rabbid-Highway-Sign-IV-Bold/RabbidHighwaySignIVBlk.otf");
+  font-family: Rabbid Highway Sign IV Bd;
+  src: url("assets/font/Rabbid-Highway-Sign-IV-Bold/RabbidHighwaySignIVBd.otf");
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 .gradient-text {
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;   
+  background-image: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.gradient-text:hover {
-    cursor: pointer;
-
-}
-
-.page-header{
-    background: var(--white-color);
-    
-    min-height: 100%;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    /* Center vertically */
-    align-items: center;
-    /*Center horizontaly */
-    justify-content: center;
+.page-header {
+  background: var(--white-color);
+  width: 100%;
+  display: flex;
+  /* Center vertically */
+  align-items: center;
+  /*Center horizontaly */
+  justify-content: center;
 }
 
 .hero {
-    background-position: center center;
-    background-size: cover;
-    width: 716px;
-    height: 621px;
-    top: 202px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  width: 100%;
+  margin-top: 60x;
+  min-height: calc(100vh - 125px - 260px);
 }
 
+/* fonts */
 
-/* fuentes */ 
-
-.title-font {
-    font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 3.5rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.75px;
+.t-font {
+  font-family: Rabbid Highway Sign IV Blk;
+  font-size: 3.5rem;
+  line-height: 4.375rem;
 }
 
 .h1-font {
-    font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 2.5em;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 120%;
-    letter-spacing: 0.75px;
+  font-family: Rabbid Highway Sign IV Blk;
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 
-.paragraph-font {
-    font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 1em;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.65;
-    letter-spacing: 0.75px;
+.h2-font {
+  font-family: Rabbid Highway Sign IV Blk;
+  font-size: 2rem;
+  line-height: 2.56rem;
 }
 
-.button-font {
-    font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-size: 0.875em;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: 0.75px;
-    text-align: center;
-    text-decoration: none;
+.h4-font {
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
-/* aqui comienza la navbar */
-
-.logo {
-    width: 162px;
-    height: 73px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 0 264px 0 0;
-    padding: 0 20px;
-    object-fit: contain;
+.h3-font {
+  font-family: Rabbid Highway Sign IV Bd;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
 }
+
+.p-font {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.p-small {
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+
+.btn-font {
+  font-family: Rabbid Highway Sign IV Blk;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+/* buttons */
+
+.btn-border {
+  padding: 0.625rem 1.25rem;
+  width: 176px;
+}
+
+.btn-border::before,
+.btn-border {
+  border-radius: 3.125rem;
+  border: 0.25rem solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    /*this is your white background*/
+      linear-gradient(to left, #3300ff 0%, #b41d8d 97.65%) border-box;
+}
+
+.btn-border:active {
+  opacity: 0.4;
+}
+
+.btn-link {
+  border: transparent;
+  background: transparent;
+  transition: all 300ms ease;
+}
+
+.btn-link:hover {
+  color: var(--primary-text);
+}
+
+.btn-gradient {
+  flex-grow: 0;
+  gap: 0.625rem;
+  padding: 1.25rem 65px;
+  border-radius: 3.125rem;
+  margin-top: 25px;
+  background-image: var(--gradient);
+  border: transparent;
+  color: var(--white-color);
+  transition: all 300ms ease;
+}
+
+.btn-gradient:hover {
+  box-shadow: 0px 0.25rem 1.5rem 0px rgba(51, 0, 255, 0.32);
+}
+
+.btn-gradient:active {
+  transform: translate(2px, -2px);
+}
+
+.btn1 {
+  gap: 0.625rem;
+  padding: 1rem 65px;
+  border-radius: 3.125rem;
+  border: transparent;
+  margin-top: 25px;
+  box-shadow: 0px 0.25rem 1.5rem 0px rgba(51, 0, 255, 0.32);
+  background-color: var(--white-color);
+  color: var(--secondary-text);
+}
+
+.btn1:hover {
+  border-radius: 3.125rem;
+  border: 0.25rem solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to left, #3300ff 0%, #b41d8d 97.65%) border-box;
+  color: var(--third-text);
+}
+
+.btn1:active {
+  transform: translate(2px, -2px);
+}
+
+.btn1-2 {
+  gap: 0.625rem;
+  padding: 1rem 65px;
+  border-radius: 3.125rem;
+  box-shadow: 0px 0.25rem 1.5rem 0px rgba(51, 0, 255, 0.32);
+  background-color: var(--white-color);
+  color: var(--secondary-text);
+  transition: all 300ms ease;
+}
+
+.btn1-2:hover {
+  border-radius: 3.125rem;
+  border: 0.25rem solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to left, #3300ff 0%, #b41d8d 97.65%) border-box;
+  color: var(--third-text);
+}
+
+.btn2 {
+  gap: 0.625rem;
+  padding: 1rem 4.063rem;
+  border-radius: 3.125rem;
+  box-shadow: 0 0.25rem 1.5rem 0 rgba(51, 0, 255, 0.32);
+  background-color: var(--white-color);
+  color: var(--secondary-text);
+  transition: all 300ms ease;
+}
+
+.btn2::before,
+.btn2 {
+  border-radius: 3.125rem;
+  border: 0.25rem solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    /*this is your white background*/
+      linear-gradient(to left, #3300ff 0%, #b41d8d 97.65%) border-box;
+  color: var(--secondary-text);
+}
+
+.btn2:hover {
+  color: var(--primary-light-text);
+  box-shadow: 0 0.25rem 1.5rem 0 rgba(51, 0, 255, 0.42);
+}
+
+.btn2:active {
+  opacity: 0.4;
+}
+
+.btn-back {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-light-text);
+  position: relative;
+  margin-left: calc(50% - 62px / 2 - 317px);
+  transition: all 300ms ease;
+}
+
+.btn-back img {
+  width: 1.125rem;
+  margin-bottom: 0.188rem;
+  cursor: pointer;
+}
+
+div .btn-back:hover {
+  opacity: 0.4;
+}
+
+/* images */
+
+.img-gif {
+  width: 21.875rem;
+}
+
+.img-logo {
+  margin: 1.625rem 0 1.625rem 6.25rem;
+  float: left;
+  cursor: pointer;
+  width: 6.875rem;
+}
+
+.img-logo:active {
+  opacity: 0.4;
+}
+
+.img-coin {
+  flex-grow: 0;
+  display: inline-block;
+  margin-right: 0.625rem;
+  vertical-align: middle;
+  width: 25%;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+.img-cat {
+  flex-grow: 0;
+  display: inline-block;
+  flex-flow: row;
+  margin-right: 0.625rem;
+  vertical-align: middle;
+  width: 0.938rem;
+  height: 0.938rem;
+  cursor: pointer;
+}
+
+li label img {
+  width: auto;
+}
+
+.img-icon {
+  flex-grow: 0;
+  display: inline-block;
+  flex-flow: row;
+  margin-right: 0.625rem;
+  vertical-align: middle;
+  width: 1.25rem;
+}
+
+.img-icon2 {
+  flex-grow: 0;
+  display: inline-block;
+  flex-flow: row;
+  vertical-align: middle;
+  width: 1.25rem;
+}
+
+.img-icon3 {
+  margin-left: 0.625rem;
+  flex-grow: 0;
+  display: inline-block;
+  flex-flow: row;
+  vertical-align: middle;
+  width: 1.25rem;
+}
+
+.img-more {
+  flex-grow: 0;
+  display: inline-block;
+  flex-flow: row;
+  vertical-align: middle;
+  width: 1.25rem;
+  margin-left: 0.625rem;
+}
+
+.img-arrow {
+  width: 0.5rem;
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+  vertical-align: middle;
+}
+
+.img-upg {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin: 1.688rem 0 0.438rem 0;
+}
+
+/* navigation bar */
 
 .nav-bar {
-    width: 100%;
-    clear: both;
-    content: '';
-    display: table;
-    height: 125px;
-    top: 0;
-    padding: 26px 100px 26px 78px;
-    background: var(--white-color);
-    position: relative;
+  width: 100%;
+  height: 7.813rem;
+  background: var(--white-color);
+  clear: both;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: var(--third-text);
-    font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-style: normal;
-    font-stretch: normal;
-    font-weight: normal;
-    font-size: 1.25rem;
-    line-height: 165%;
-    letter-spacing: 0.75px;
-    list-style: none;
+.menu-fixed {
+  position: fixed;
+  background: var(--white-color);
+  z-index: 1000;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 0 1.5rem 0 rgba(51, 0, 255, 0.12);
 }
 
-nav ul li a:hover {
-    cursor: pointer;
-    color: var(--primary-light-text);
+.nav {
+  float: right;
+}
+
+.nav li a,
+button {
+  color: var(--third-text);
+  margin-top: 2.875rem;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  transition: all 300ms ease;
+}
+
+.nav li button:hover:not(.navlink5) {
+  color: var(--primary-text);
+}
+
+.nav > li {
+  float: left;
 }
 
 .navlink1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-
-    position: absolute;
-    width: 129px;
-    height: 33px;
-    left: 744px;
-    top: 46px;
+  margin-right: 1.563rem;
+  padding: 0 1.25rem;
 }
 
 .navlink2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-
-    position: absolute;
-    width: 119px;
-    height: 33px;
-    left: 898px;
-    top: 46px;
+  margin-right: 1.563rem;
+  padding: 0 1.25rem;
 }
 
 .navlink3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-
-    position: absolute;
-    width: 135px;
-    height: 33px;
-    left: 1042px;
-    top: 46px;
+  margin-right: 6.188rem;
+  padding: 0 1.25rem;
+  position: relative;
+  background-image: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease;
 }
 
-.coin {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
+.navlink3:hover {
+  background-image: linear-gradient(to left, #3300ff, #b41d8d);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: gradient 2s ease infinite normal;
+          animation: gradient 2s ease infinite normal;
+}
 
-    position: absolute;
-    width: 107px;
-    height: 53px;
-    left: 1475px;
-    top: 38px;
+@-webkit-keyframes gradient {
+  0% {
+    background-position: left;
+  } /*default*/
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: left;
+  } /*default*/
+  100% {
+    background-position: right;
+  }
 }
 
 .navlink4 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    left: 1607px;
-    top: 36px;
-    height: 53px;
-    width: 10%;
-    padding: 10px 20px;
-    text-align: center; 
-    position: absolute;
+  margin-right: 1.563rem;
+  padding: 0px 1.25rem;
+  width: 10.563rem;
+  vertical-align: middle;
 }
 
-.navlink4::before,
-.navlink4 {
-    border-radius: 50px; 
-    border: 4px solid transparent; 
-    background:
-     linear-gradient(#fff,#fff) padding-box, /*this is your white background*/
-     linear-gradient(to left, #3300FF 0%, #B41D8D 97.65%) border-box;
-    color: var(--third-text);
+.navlink5 {
+  margin: -0.875rem 100px 0px 0px;
+  padding: 0.625rem 1.25rem;
+  width: 11.125rem;
 }
 
-.image-coin {
-    flex-grow: 0;
-    float: left;
-    left: 30px;
-    display: block;
-    margin: -2px 3px;
+.navlink5::before,
+.navlink5 {
+  border-radius: 3.125rem;
+  border: 0.25rem solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    /*this is the white background*/
+      linear-gradient(to left, #3300ff 0%, #b41d8d 97.65%) border-box;
 }
 
-/* aqui comienza el landing */
-
-
-.header1 {
-    width: 443px;
-    height: 160px;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 133px 127px 5px 126px;
-    padding: 10px;
+.navlink5:hover {
+  background-image: var(--gradient);
+  border-radius: 3.125rem;
+  color: var(--white-color);
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  font-family: Rabbid Highway Sign IV Blk;
 }
 
-.title {
-    flex-grow: 0;
-    text-align: center;
-    color: var(--primary-text);
+.navlink5:active {
+  opacity: 0.4;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  width: 16.938rem;
+  max-height: 21.938rem;
+  background: var(--white-color);
+  border-radius: 1.875rem;
+  box-shadow: 0 0.25rem 1.5rem 0 rgba(51, 0, 255, 0.12);
+}
+
+.nav li ul li a button {
+  text-align: left;
+  margin: -1.563rem 1.25rem 1.25rem 1.25rem;
+  padding: 0 1.25rem;
+  transition: all 300ms ease;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: var(--third-text);
+}
+
+.nav li ul li p {
+  text-align: left;
+  margin: 1.563rem 0 1.563rem 1.25rem;
+  padding: 0 1.25rem;
+  transition: all 300ms ease;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: var(--third-text);
+}
+
+.nav li ul li .logout,
+.logout {
+  color: var(--primary-light-text);
+}
+
+.nav li ul li .logout:hover {
+  color: var(--secondary-light-text);
+}
+
+.logout:hover {
+  color: var(--secondary-light-text);
+}
+
+.nav li ul li .usermail {
+  color: var(--primary-light-text);
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+/* input text */
+
+.nav li ul li input[type="text"] {
+  display: block;
+  margin-top: -25px;
+  margin-left: 2.375rem;
+  padding: 0.625rem 1.25rem;
+  border: 2px solid var(--secondary-light-text);
+  border-radius: 30px;
+  width: 200px;
+  text-align: left;
+  cursor: text;
+  transition: 0.5s;
+  outline: none;
+  color: var(--secondary-light-text);
+}
+
+.nav li ul li input[type="text"]:focus {
+  color: var(--primary-light-text);
+  border: 2px solid var(--primary-light-text);
+}
+
+.nav li ul li input[type="text"]::-webkit-input-placeholder {
+  color: var(--secondary-light-text);
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+
+.nav li ul li input[type="text"]::-moz-placeholder {
+  color: var(--secondary-light-text);
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+
+.nav li ul li input[type="text"]:-ms-input-placeholder {
+  color: var(--secondary-light-text);
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+
+.nav li ul li input[type="text"]::-ms-input-placeholder {
+  color: var(--secondary-light-text);
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+
+.nav li ul li input[type="text"]::placeholder {
+  color: var(--secondary-light-text);
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+
+/* togle button navbar */
+
+.toggle {
+  /* este controla los estilos de posicion y margen del toggle */
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+
+  margin-left: 0.625rem;
+}
+
+.nav li ul li .toggle .togg[for="tog-btn"] {
+  /* este controla la forma del toggle */
+  display: block;
+  width: 3.125rem;
+  height: 1.875rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: var(--gradient);
+}
+
+.nav li ul li .toggle .togg[for="tog-btn"]::before {
+  content: "";
+  width: 1.75rem;
+  height: 1.75rem;
+  background-image: none;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: block;
+
+  transform: translate(calc(50px - 29px), 1px);
+  transition: all 300ms ease;
+}
+
+.nav li ul li .toggle input[type="checkbox"]:checked ~ .togg::before {
+  transform: translate(1px, 1px);
+}
+
+.nav li ul li .toggle input[type="checkbox"]:checked ~ .togg {
+  background: var(--secondary-light-text);
+}
+
+.nav li ul li input[type="checkbox"],
+.service-c input[type="checkbox"] {
+  display: none;
+}
+
+.spark-btn {
+  cursor: pointer;
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-image: url("../src/assets/img/img-desaprove.svg");
+  background-repeat: no-repeat;
+}
+
+.spark-btn.img-icon {
+  margin-right: 10px;
+}
+
+.service-c input[type="checkbox"]:checked + .spark-btn {
+  background-image: url("../src/assets/img/img-spark.svg");
+}
+
+/* landing page */
+
+.header {
+  flex-grow: 0;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  margin-top: 120px;
+  color: var(--primary-text);
+}
+
+.header .gradient-text {
+  padding: 0.625rem 0 0.625rem 0;
+}
+
+.header3 {
+  flex-grow: 0;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  margin-top: 9.375rem;
+  color: var(--primary-text);
+}
+
+.mg-bottom {
+  margin-bottom: 2rem;
 }
 
 .text {
-    width: 453px;
-    height: 98px;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 5px 122px 15px 121px;
-    padding: 10px;
+  flex-grow: 0;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  margin-top: 7px;
 }
 
 .paragraph {
-    text-align: center;
-    text-indent: 15px;
-    flex-grow: 0;
-    color: var(--third-text);
+  text-indent: 0.938rem;
+  flex-grow: 0;
+  color: var(--third-text);
 }
 
 .btn-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button-gradient {
-    width: 251px;
-    height: 65px;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin: 15px 223px 125px 222px;
-    padding: 20px 65px;
-    border-radius: 50px;
-    background-image: var(--gradient);
-    
-    color: var(--white-color);
+.btn-center .logout {
+  margin-top: 200px;
+  margin-right: 1.563rem;
+  margin-bottom: 1.563rem;
+  padding: 0px 1.25rem;
 }
 
-.button-gradient:hover {
-    cursor: pointer;
-    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+.btn-center .logout:last-child {
+  margin-right: 0px;
+  opacity: 0.4;
 }
 
-.button-gradient:active {
-    opacity: 0.5;
+/* upgrade page */
+
+.container3 {
+  width: 300px;
+  min-height: 387px;
+  flex-grow: 0;
+  margin: 0px 1.125rem 0.5rem 0px;
+  border-radius: 30px;
+  box-shadow: 0 0.25rem 1.5rem 0 rgba(51, 0, 255, 0.32);
+  background-color: var(--white-color);
+  transition: all 300ms ease;
+  margin-bottom: 1rem;
 }
 
-/* aqui comienza el  footer */
+.container3:hover {
+  cursor: pointer;
+  transform: translateY(-0.875rem);
+}
+
+.container3:hover .btn-border {
+  background-image: var(--gradient);
+  border-radius: 3.125rem;
+  color: var(--white-color);
+  font-family: Rabbid Highway Sign IV Blk;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+.t-up {
+  color: var(--secondary-text);
+  margin-top: 7px;
+  padding: 0.625rem;
+}
+
+.sub-up {
+  padding: 0.625rem;
+}
+
+.money {
+  color: var(--primary-text);
+  padding: 0.625rem;
+  margin-left: -1.063rem;
+  min-width: 79px;
+}
+
+.money sup {
+  margin-right: 0.313rem;
+}
+
+.btn-up {
+  margin-top: 28px;
+}
+
+.img-text {
+  position: relative;
+}
+
+.img-text span {
+  position: absolute;
+  z-index: 999;
+  margin: 27px 27px 0px 0px;
+  padding: 0 5px;
+}
+
+.offer {
+  left: inherit !important;
+}
+
+/* categories page */
+
+.header2 {
+  flex-grow: 0;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  margin-top: 1.25rem;
+  color: var(--primary-text);
+}
+
+.text1 {
+  flex-grow: 0;
+  gap: 0.625rem;
+  margin: 7px 0px 60px 0px;
+  padding: 0.625rem;
+}
+
+.text1 .gradient-text {
+  padding: 0.625rem 0 0.625rem 0;
+}
+
+.text2 {
+  flex-grow: 0;
+  gap: 0.625rem;
+  margin: 7px 0px 30px 0px;
+  padding: 0.625rem;
+}
+
+.text3 {
+  flex-grow: 0;
+  gap: 0.625rem;
+  margin-top: 25px;
+  color: var(--secondary-light-text);
+}
+
+.group-btn {
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.container {
+  width: 219px;
+  min-height: 719px;
+  flex-grow: 0;
+  border-radius: 30px;
+  box-shadow: 0 0.25rem 1.5rem 0 rgba(51, 0, 255, 0.32);
+  background-color: var(--white-color);
+}
+
+.container .cat li ul li {
+  margin: 1.563rem 0px 1.563rem 1.563rem;
+  display: flex;
+}
+
+.container .cat li ul li label {
+  color: var(--third-text);
+  font-family: Rabbid Highway Sign IV Blk;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  transition: all 300ms ease;
+}
+
+.cat li input[type="radio"] {
+  display: none;
+}
+
+.cat input[type="radio"] + label {
+  cursor: pointer;
+}
+
+.cat input[type="radio"] + label:hover {
+  color: var(--secondary-text);
+}
+
+.cat label::before {
+  content: "";
+  background-image: url(./assets/img/img-circle.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+  vertical-align: middle;
+}
+
+.cat input[type="radio"]:checked + label::before {
+  background-image: url(./assets/img/img-checked.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+}
+
+.cat input[type="radio"]:checked + label {
+  background-image: linear-gradient(to left, #3300ff, #b41d8d);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: gradient 2s ease infinite normal;
+          animation: gradient 2s ease infinite normal;
+}
+
+/* loading page */
+
+/* loading page */
+
+#s-overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}		
+
+#aiblob {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 4rem;
+  height: 100%;
+  max-height: 4rem;
+  margin: 0 auto;
+  z-index: 5001;
+}
+
+/* answers page */
+
+.container2 {
+  max-width: 490px;
+  min-height: 257px;
+  flex-grow: 0;
+  margin-bottom: 60px;
+  border-radius: 30px;
+  box-shadow: 0 0.25rem 1.5rem 0 rgba(51, 0, 255, 0.32);
+  background-color: var(--white-color);
+  overflow: hidden;
+}
+
+.flex-wrapper1 {
+  margin: 25px 21.5px 0px 21.5px;
+  width: 447px;
+  color: var(--third-text);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.flex-wrapper1 p,
+.flex-wrapper1 button,
+.flex-wrapper2 p,
+.flex-wrapper2 b,
+.flex-wrapper2 button {
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+
+.flex-wrapper1 .btn-link:hover {
+  opacity: 0.4;
+}
+
+.service-c {
+  width: 271px;
+  margin-right: 67px;
+  float: left;
+  display: flex;
+}
+
+.service-c b {
+  color: var(--third-text);
+}
+
+.username {
+  max-width: 109px;
+  float: right;
+  display: flex;
+  margin-top: 0;
+}
+
+.idea-title {
+  margin-top: 25px;
+  flex-grow: 0;
+  gap: 0.625rem;
+  color: var(--primary-text);
+}
+
+.description {
+  color: var(--primary-light-text);
+  gap: 0.625rem;
+  max-height: 66px;
+  margin-top: 0.875rem;
+}
+
+.flex-wrapper2 {
+  margin: 25px 21.5px 25px 21.5px;
+  width: 447px;
+  color: var(--primary-light-text);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.flex-wrapper2 a button {
+  color: var(--primary-light-text);
+}
+
+.flex-wrapper2 .btn-link:hover {
+  opacity: 0.4;
+}
+
+.flex-wrapper2 button img,
+.flex-wrapper1 button img {
+  cursor: pointer;
+}
+
+/* share page */
+
+.logo {
+  margin: 1.25rem 0px 60px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo .img-logo {
+  width: 180px;
+  margin: 0px;
+  float: none;
+}
+
+/* footer */
 
 footer {
-    width: 100%;
-    bottom: 0;
-    background: var(--white-color);
-    position: absolute;
+  margin-top: auto;
+  width: 100%;
+  background-color: var(--white-color);
+  height: 260px;
 }
 
-.menu {
-    margin-right: 100px;
+footer .group1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-nav {
-    float: right;
+.box {
+  margin-top: 42.5px;
 }
 
-footer nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 25px 0 0;
-    padding: 49px 25px;
-    text-align: center;
-
+footer .group1 .box figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-left: 100px;
+  margin-top: 70px;
 }
 
-footer nav ul li a {
-    text-decoration: none;
-    color: var(--third-text);
-    font-family: 'Rabbid Highway Sign IV', sans-serif;
-    font-style: normal;
-    font-stretch: normal;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.65;
-    letter-spacing: 0.75px;
-    cursor: pointer;
+footer .group1 .box figure a {
+  color: var(--primary-text);
+  padding: 0px 1.25rem;
+}
+
+footer .group1 .box figure a:hover {
+  color: var(--third-text);
+}
+
+footer .group1 .box figure a:active {
+  opacity: 0.4;
+}
+
+footer .group1 .box h5 {
+  color: var(--third-text);
+  margin-bottom: 21px;
+  padding: 0px, 1.25rem;
+  text-align: left;
+}
+
+footer .group1 .box .social li a {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  padding: 0px, 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  color: var(--primary-light-text);
+  transition: all 300ms ease;
+}
+
+footer .group1 .box .social li a:hover {
+  color: var(--secondary-light-text);
 }

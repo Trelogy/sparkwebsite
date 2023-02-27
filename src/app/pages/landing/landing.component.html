@@ -1,19 +1,202 @@
 <div class="page-header">
-  <div class="hero" style="background-image: url('./assets/img/bg-decoration.jpg');">
-          <div class="header1">
-            <h1 class="title title-font">Looking for a<br />
-                Business Idea?
-            </h1>
+  <div
+    class="hero"
+    style="background-image: url('./assets/img/bg-decoration.jpg')"
+  >
+    <div class="header">
+      <h1 class="t-font">
+        Looking for a <br />
+        Business <span class="gradient-text t-font">Spark</span>?
+      </h1>
+    </div>
+    <div class="text">
+      <p class="paragraph p-font">
+        If you’re looking for a new business or idea, <br />
+        GPT-3 is here to help! We provide a service that <br />
+        was never thought possible before.
+      </p>
+    </div>
+    <div class="btn-center">
+      <a href="#categories" *ngIf="userLogged | async as user; else showSignin"
+        ><button class="btn-gradient btn-font">Find your spark</button></a
+      >
+      <ng-template #showSignin
+        ><a href="#signin"
+          ><button class="btn-gradient btn-font">Find your spark</button></a
+        ></ng-template
+      >
+    </div>
+
+    <div class="btn-center">
+      <button class="p-small btn-link logout">Popular</button>
+
+      <a name="answers"
+        ><button class="p-small btn-link logout">Newest</button></a
+      >
+    </div>
+
+    <div class="btn-center">
+      <div class="container2">
+        <div class="flex-wrapper1">
+          <div class="service-c">
+            <img alt="" class="img-icon" src="./assets/img/img-service.svg" />
+            <p>Service</p>
+            <img alt="" class="img-arrow" src="./assets/img/img-arrow.svg" />
+            <p>Smartphone</p>
           </div>
-          <div class="text">
-            <p class="paragraph paragraph-font">
-                If you’re looking for a new business or idea, GPT-3 is
-              here to help! We provide a service that was never
-              thought possible before.
-            </p>
+          <p>jhonny99</p>
+          <button *ngIf="userLogged | async as user" class="username btn-link">
+            <img alt="" class="img-more" src="./assets/img/img-more.svg" />
+          </button>
+        </div>
+        <div class="idea-title">
+          <h3 class="h4-font">Creation of Custom Web Pages</h3>
+        </div>
+        <div class="description">
+          <p class="p-small">
+            Private company for the creation of <br />
+            personalized web pages where it meets <br />
+            the needs of its client.
+          </p>
+        </div>
+        <div class="flex-wrapper2">
+          <div class="service-c">
+            <input
+              type="checkbox"
+              name="spark-btn"
+              id="spark-btn"
+              checked
+            /><label class="spark-btn img-icon" for="spark-btn"></label>
+            <p>Approved by <b>you</b> and 15<b> others</b></p>
           </div>
-          <div class="btn-center">
-            <a href="#categories" class="button-gradient button-font">Find your spark</a>
+          <a href="#share" target="_blank"
+            ><button class="username btn-link">
+              <img
+                alt=""
+                class="img-icon"
+                src="./assets/img/img-share.svg"
+              />Share
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-center">
+      <div class="container2">
+        <div class="flex-wrapper1">
+          <div class="service-c">
+            <img alt="" class="img-icon" src="./assets/img/img-service.svg" />
+            <p>Service</p>
+            <img alt="" class="img-arrow" src="./assets/img/img-arrow.svg" />
+            <p>Smartphone</p>
           </div>
-   </div>
+          <p>jhonny99</p>
+        </div>
+        <div class="idea-title">
+          <h3 class="h4-font">Creation of Custom Web Pages</h3>
+        </div>
+        <div class="description">
+          <p class="p-small">
+            Private company for the creation of <br />
+            personalized web pages where it meets <br />
+            the needs of its client.
+          </p>
+        </div>
+        <div class="flex-wrapper2">
+          <div class="service-c">
+            <img alt="" class="img-icon" src="./assets/img/img-desaprove.svg" />
+            <p>Approved by and 15<b> others</b></p>
+          </div>
+          <a href="#share" target="_blank"
+            ><button class="username btn-link">
+              <img
+                alt=""
+                class="img-icon"
+                src="./assets/img/img-share.svg"
+              />Share
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-center">
+      <div class="container2">
+        <div class="flex-wrapper1">
+          <div class="service-c">
+            <img alt="" class="img-icon" src="./assets/img/img-service.svg" />
+            <p>Service</p>
+            <img alt="" class="img-arrow" src="./assets/img/img-arrow.svg" />
+            <p>Smartphone</p>
+          </div>
+          <p>jhonny99</p>
+        </div>
+        <div class="idea-title">
+          <h3 class="h4-font">Creation of Custom Web Pages</h3>
+        </div>
+        <div class="description">
+          <p class="p-small">
+            Private company for the creation of <br />
+            personalized web pages where it meets <br />
+            the needs of its client.
+          </p>
+        </div>
+        <div class="flex-wrapper2">
+          <div class="service-c">
+            <img alt="" class="img-icon" src="./assets/img/img-desaprove.svg" />
+            <p>Approved by and 15<b> others</b></p>
+          </div>
+          <a href="#share" target="_blank"
+            ><button class="username btn-link">
+              <img
+                alt=""
+                class="img-icon"
+                src="./assets/img/img-share.svg"
+              />Share
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-center">
+      <div class="container2">
+        <div class="flex-wrapper1">
+          <div class="service-c">
+            <img alt="" class="img-icon" src="./assets/img/img-service.svg" />
+            <p>Service</p>
+            <img alt="" class="img-arrow" src="./assets/img/img-arrow.svg" />
+            <p>Smartphone</p>
+          </div>
+          <p>jhonny99</p>
+        </div>
+        <div class="idea-title">
+          <h3 class="h4-font">Creation of Custom Web Pages</h3>
+        </div>
+        <div class="description">
+          <p class="p-small">
+            Private company for the creation of <br />
+            personalized web pages where it meets <br />
+            the needs of its client.
+          </p>
+        </div>
+        <div class="flex-wrapper2">
+          <div class="service-c">
+            <img alt="" class="img-icon" src="./assets/img/img-desaprove.svg" />
+            <p>Approved by and 15<b> others</b></p>
+          </div>
+          <a href="#share" target="_blank"
+            ><button class="username btn-link">
+              <img
+                alt=""
+                class="img-icon"
+                src="./assets/img/img-share.svg"
+              />Share
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
