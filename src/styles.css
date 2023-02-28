@@ -15,7 +15,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: Rabbid Highway Sign IV;
+  font-family: "rabbid_highway_sign_ivbd";
   letter-spacing: 0.75px;
   font-stretch: normal;
   font-weight: normal;
@@ -35,12 +35,31 @@ body {
 }
 
 @font-face {
-  font-family: Rabbid Highway Sign IV;
-  src: url("assets/font/Rabbid-Highway-Sign-IV-Bold/RabbidHighwaySignIV.otf");
-  font-family: Rabbid Highway Sign IV Blk;
-  src: url("assets/font/Rabbid-Highway-Sign-IV-Bold/RabbidHighwaySignIVBlk.otf");
-  font-family: Rabbid Highway Sign IV Bd;
-  src: url("assets/font/Rabbid-Highway-Sign-IV-Bold/RabbidHighwaySignIVBd.otf");
+  font-family: "rabbid_highway_sign_ivblk";
+  src: url("./assets/font/Rabbid-Highway-Sign-IV-Bold/rabbidhighwaysignivblk-webfont.woff2")
+      format("woff2"),
+    url("./assets/font/Rabbid-Highway-Sign-IV-Bold/rabbidhighwaysignivblk-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "rabbid_highway_sign_ivregular";
+  src: url("./assets/font/Rabbid-Highway-Sign-IV-Bold/rabbidhighwaysigniv-webfont.woff2")
+      format("woff2"),
+    url("./assets/font/Rabbid-Highway-Sign-IV-Bold/rabbidhighwaysigniv-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "rabbid_highway_sign_ivbd";
+  src: url("./assets/font/Rabbid-Highway-Sign-IV-Bold/rabbidhighwaysignivbd-webfont.woff2")
+      format("woff2"),
+    url("./assets/font/Rabbid-Highway-Sign-IV-Bold/rabbidhighwaysignivbd-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 img {
@@ -91,19 +110,19 @@ button {
 /* fonts */
 
 .t-font {
-  font-family: Rabbid Highway Sign IV Blk;
+  font-family: "rabbid_highway_sign_ivblk";
   font-size: 3.5rem;
   line-height: 4.375rem;
 }
 
 .h1-font {
-  font-family: Rabbid Highway Sign IV Blk;
+  font-family: "rabbid_highway_sign_ivblk";
   font-size: 2.5rem;
   line-height: 3rem;
 }
 
 .h2-font {
-  font-family: Rabbid Highway Sign IV Blk;
+  font-family: "rabbid_highway_sign_ivblk";
   font-size: 2rem;
   line-height: 2.56rem;
 }
@@ -114,7 +133,6 @@ button {
 }
 
 .h3-font {
-  font-family: Rabbid Highway Sign IV Bd;
   font-size: 1.5rem;
   line-height: 2.1rem;
 }
@@ -130,7 +148,7 @@ button {
 }
 
 .btn-font {
-  font-family: Rabbid Highway Sign IV Blk;
+  font-family: "rabbid_highway_sign_ivblk";
   font-size: 0.875rem;
   line-height: 1.75rem;
 }
@@ -436,7 +454,7 @@ button {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: gradient 2s ease infinite normal;
-          animation: gradient 2s ease infinite normal;
+  animation: gradient 2s ease infinite normal;
 }
 
 @-webkit-keyframes gradient {
@@ -485,7 +503,7 @@ button {
   color: var(--white-color);
   font-size: 0.875rem;
   line-height: 1.75rem;
-  font-family: Rabbid Highway Sign IV Blk;
+  font-family: "rabbid_highway_sign_ivblk";
 }
 
 .navlink5:active {
@@ -746,7 +764,7 @@ button {
   background-image: var(--gradient);
   border-radius: 3.125rem;
   color: var(--white-color);
-  font-family: Rabbid Highway Sign IV Blk;
+  font-family: "rabbid_highway_sign_ivblk";
   font-size: 0.875rem;
   line-height: 1.75rem;
 }
@@ -848,7 +866,7 @@ button {
 
 .container .cat li ul li label {
   color: var(--third-text);
-  font-family: Rabbid Highway Sign IV Blk;
+  font-family: "rabbid_highway_sign_ivblk";
   font-size: 0.875rem;
   line-height: 1.75rem;
   transition: all 300ms ease;
@@ -893,14 +911,14 @@ button {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: gradient 2s ease infinite normal;
-          animation: gradient 2s ease infinite normal;
+  animation: gradient 2s ease infinite normal;
 }
 
 /* loading page */
 
 /* loading page */
 
-#s-overlay{
+#s-overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -911,7 +929,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-}		
+}
 
 #aiblob {
   display: inline-block;
