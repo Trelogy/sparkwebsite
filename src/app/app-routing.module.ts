@@ -15,8 +15,8 @@ import { UpgradeComponent } from './pages/upgrade/upgrade.component';
 import { ShareComponent } from './pages/share/share.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'landing', pathMatch: 'full' },
-  { path: 'landing',          component: LandingComponent },
+  { path: '', redirectTo: 'spark', pathMatch: 'full' },
+  { path: 'spark',          component: LandingComponent },
   { path: 'categories',          component: CategoriesComponent },
   { path: 'coins',          component: CoinsComponent },
   { path: 'answers-service',          component: AnswersServiceComponent },
@@ -25,6 +25,7 @@ const routes: Routes = [
   { path: 'history',          component: HistoryComponent },
   { path: 'upgrade',          component: UpgradeComponent },
   { path: 'share',          component: ShareComponent },
+  { path: '**', redirectTo: 'spark', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -32,7 +33,7 @@ const routes: Routes = [
     CommonModule,
     BrowserModule,
     RouterModule.forRoot(routes, {
-      useHash : true
+     
       })
     ],
   exports: [RouterModule]

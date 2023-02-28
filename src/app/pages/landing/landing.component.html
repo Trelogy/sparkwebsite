@@ -17,11 +17,11 @@
       </p>
     </div>
     <div class="btn-center">
-      <a href="#categories" *ngIf="userLogged | async as user; else showSignin"
+      <a href="categories" *ngIf="userLogged | async as user; else showSignin"
         ><button class="btn-gradient btn-font">Find your spark</button></a
       >
       <ng-template #showSignin
-        ><a href="#signin"
+        ><a href="signin"
           ><button class="btn-gradient btn-font">Find your spark</button></a
         ></ng-template
       >
@@ -69,7 +69,7 @@
             /><label class="spark-btn img-icon" for="spark-btn"></label>
             <p>Approved by <b>you</b> and 15<b> others</b></p>
           </div>
-          <a href="#share" target="_blank"
+          <a href="share" target="_blank"
             ><button class="username btn-link">
               <img
                 alt=""
@@ -108,7 +108,7 @@
             <img alt="" class="img-icon" src="./assets/img/img-desaprove.svg" />
             <p>Approved by and 15<b> others</b></p>
           </div>
-          <a href="#share" target="_blank"
+          <a href="share" target="_blank"
             ><button class="username btn-link">
               <img
                 alt=""
@@ -147,7 +147,7 @@
             <img alt="" class="img-icon" src="./assets/img/img-desaprove.svg" />
             <p>Approved by and 15<b> others</b></p>
           </div>
-          <a href="#share" target="_blank"
+          <a href="share" target="_blank"
             ><button class="username btn-link">
               <img
                 alt=""
@@ -186,7 +186,7 @@
             <img alt="" class="img-icon" src="./assets/img/img-desaprove.svg" />
             <p>Approved by and 15<b> others</b></p>
           </div>
-          <a href="#share" target="_blank"
+          <a href="share" target="_blank"
             ><button class="username btn-link">
               <img
                 alt=""

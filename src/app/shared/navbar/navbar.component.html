@@ -1,5 +1,5 @@
 <div class="nav-bar">
-  <a href="#landing"
+  <a href="spark"
     ><img class="img-logo" alt="logo" src="./assets/img/img-logo.svg"
   /></a>
   <ul class="nav">
@@ -40,13 +40,13 @@
       </ul>
     </li>
     <li class="navlink2">
-      <a href="#history"><button class="btn-link">History</button></a>
+      <a href="history"><button class="btn-link">History</button></a>
     </li>
     <li class="navlink3">
-      <a href="#upgrade"><button class="btn-link">Upgrade</button></a>
+      <a href="upgrade"><button class="btn-link">Upgrade</button></a>
     </li>
     <li class="navlink4">
-      <a href="#upgrade"
+      <a href="upgrade"
         ><button class="btn-link">
           <img
             class="img-coin"
@@ -59,11 +59,11 @@
       >
     </li>
     <li *ngIf="userLogged | async as user; else showSignin">
-      <a href="#landing"><button class="navlink5">Spark Ideas</button></a>
+      <a href="spark"><button class="navlink5">Spark Ideas</button></a>
     </li>
     <ng-template #showSignin
       ><li>
-        <a href="#signin"><button class="navlink5">Spark Ideas</button></a>
+        <a href="signin"><button class="navlink5">Spark Ideas</button></a>
       </li></ng-template
     >
   </ul>
